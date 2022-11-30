@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 
 @Service
-public class ListService {
+public class SaleListService {
 
     @Autowired(required = false)
     private SaleMapper saleMapper;
