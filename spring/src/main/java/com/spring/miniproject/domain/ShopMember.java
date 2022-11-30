@@ -11,9 +11,9 @@ import lombok.*;
 public class ShopMember {
 
     private int idx;
-    private String sid;
-    private String spw;
-    private String sname;
-    private String saddress;
+    private String uid;
+    private String pw;
+    private String uname;
+    private String uaddress;
 
 }

@@ -4,15 +4,15 @@
 
 <mapper namespace="com.spring.miniproject.mapper.SaleMapper">
 
-    <insert id="shopSave" parameterType="com.spring.miniproject.domain.Shopping">
+    <insert id="shopSave" parameterType="com.spring.miniproject.domain.Sale">
 
-        insert into shopping values(bid=#{bid}, bname=#{bname}, bsal=#{bsal}, borderDate=#{borderDate}, bimage=#{bimage})
+        insert into shopping values(pnumber=#{pnumber}, pname=#{pname}, price=#{price}, image=#{image})
 
     </insert>
 
-    <update id="shopModify" parameterType="com.spring.miniproject.domain.Shopping">
+    <update id="shopModify" parameterType="com.spring.miniproject.domain.Sale">
 
-        update shopping set bname=#{bname}, bsal=#{bsal}, borderDate=#{borderDate}, bimage=#{bimage} where bid=#{bid}
+        update shopping set pname=#{pname}, price=#{price}, image=#{image} where pnumber=#{pnumber}
 
     </update>
 

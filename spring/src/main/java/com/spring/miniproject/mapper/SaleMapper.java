@@ -1,6 +1,6 @@
 package com.spring.miniproject.mapper;
 
-import com.spring.miniproject.domain.Shopping;
+import com.spring.miniproject.domain.Sale;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Select;
 
@@ -9,14 +9,14 @@ import java.util.List;
 public interface SaleMapper {
 
     @Select("select * from shopping")
-    List<Shopping> shopping();
+    List<Sale> shopping();
 
-    int shopSave (Shopping shopping);
+    int shopSave (Sale shopping);
 
     @Select("select * from shopping where bid=#{bid}")
-    Shopping shopRead(int bid);
+    Sale shopRead(int bid);
 
-    int shopModify (Shopping shopping);
+    int shopModify (Sale shopping);
 
     @Delete("delete from shopping where bid=#{bid}")
     int shopDelete(int bid);
