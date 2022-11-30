@@ -1,0 +1,19 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.miniproject.mapper.SaleMapper">
+
+    <insert id="shopSave" parameterType="com.spring.miniproject.domain.Shopping">
+
+        insert into shopping values(bid=#{bid}, bname=#{bname}, bsal=#{bsal}, borderDate=#{borderDate}, bimage=#{bimage})
+
+    </insert>
+
+    <update id="shopModify" parameterType="com.spring.miniproject.domain.Shopping">
+
+        update shopping set bname=#{bname}, bsal=#{bsal}, borderDate=#{borderDate}, bimage=#{bimage} where bid=#{bid}
+
+    </update>
+
+</mapper>

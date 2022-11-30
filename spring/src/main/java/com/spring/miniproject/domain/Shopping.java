@@ -10,10 +10,10 @@ import lombok.*;
 @Builder
 public class Shopping {
 
-    private int orderid;
+    private int bid;
     private String bname;
     private int bsal;
     private String borderDate;
-    private String image;
+    private String bimage;
 
 }
