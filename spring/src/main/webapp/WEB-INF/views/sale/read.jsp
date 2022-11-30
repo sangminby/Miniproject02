@@ -13,7 +13,6 @@
 </head>
 <body>
 
-
 <table>
     <tr>
         <td>상품명</td>
@@ -24,14 +23,14 @@
     <c:forEach var="sale" items="${list}" varStatus="stat">
     <tr>
 
-        <td><a href="/todo/read?pnumber=${sale.pnumber}"></a>${sale.pname}</td>
+        <td><a href="/sale/read?pnumber=${sale.pnumber}"></a>${sale.pname}</td>
         <td><img src="/image/${sale.image}" id="img"></td>
 
 
     </tr>
     </c:forEach>
 
-    <a href="/sale/delete?pnumber=${sale.pnumber}">삭제</a>
+    <a href="/sale/modify?pnumber=${sale.pnumber}">수정</a> <a href="/sale/delete?pnumber=${sale.pnumber}">삭제</a>
 
 
 <%--

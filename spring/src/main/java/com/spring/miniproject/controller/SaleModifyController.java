@@ -25,11 +25,13 @@ public class SaleModifyController {
 
 
     @GetMapping
-    public String getModify(Model model, @RequestParam("pnumber") int pnumber) {
+    public void getModify(
+            @RequestParam("pnumber") int pnumber,
+            Model model
+    ) {
 
         model.addAttribute("sale", saleReadService.read(pnumber));
 
-        return "/sale/modify";
     }
 
 
@@ -40,7 +42,5 @@ public class SaleModifyController {
 
         return "redirect:/sale/list";
     }
-
-
 
 }

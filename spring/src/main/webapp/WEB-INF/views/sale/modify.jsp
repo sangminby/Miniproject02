@@ -1,4 +1,4 @@
-+<%--
+<%--
   Created by IntelliJ IDEA.
   User: cheoho-hi
   Date: 2022-11-30
@@ -12,44 +12,41 @@
 </head>
 <body>
 
-<h1>상품 수정</h1>
-<hr>
+  <h1>상품 수정</h1>
+  <hr>
 
-<form method="post">
+  <form action="/sale/modify" method="post" enctype="multipart/form-data">
 
-  <table>
+    <table>
 
-    <tr>
+      <tr>
+        <td>상품번호</td>
+        <td><input type="number" name="pnumber" value="${sale.pnumber}" readonly></td>
+      </tr>
 
-      <td>상품명</td>
-      <td><input type="number" name="deptno" value="${dept.deptno}" readonly></td>
+      <tr>
+        <td>상품명</td>
+        <td><input type="text" name="pname" value="${sale.pname}"></td>
+      </tr>
 
-    </tr>
+      <tr>
+        <td>판매금액</td>
+        <td><input type="number" name="price" value="${sale.price}"></td>
+      </tr>
 
-    <tr>
+      <tr>
+        <td>상품이미지</td>
+        <td><input type="file" name="image" value="${sale.image}"></td>
+      </tr>
 
-      <td>부서이름</td>
-      <td><input type="text" name="dname" value="${dept.dname}"></td>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="수정"></td>
+      </tr>
 
-    </tr>
+    </table>
 
-    <tr>
-
-      <td>부서위치</td>
-      <td><input type="text" name="loc" value="${dept.loc}"></td>
-
-    </tr>
-
-    <tr>
-
-      <td></td>
-      <td><input type="submit" value="등록"></td>
-
-    </tr>
-
-  </table>
-
-</form>
+  </form>
 
 </body>
 </html>
