@@ -48,8 +48,8 @@
     <tr>
 
       <td>${sale.pnumber}</td>
-      <td><img src="/image/${sale.image}" id="img"></td>
-      <td>${sale.pname}</td>
+      <td><a href="/sale/read?pnumber=${sale.pnumber}"><img src="/image/${sale.image}" id="img"></a></td>
+      <td><a href="/sale/read?pnumber=${sale.pnumber}">${sale.pname}</a></td>
       <td>${sale.price}</td>
 
 
