@@ -27,7 +27,7 @@
   </style>
 
 </head>
-<body>
+<a>
 
 <h1>${title}</h1>
 
@@ -60,6 +60,7 @@
 </table>
 
 <a href="/sale/save">상품 등록하기</a> <a href="/index">돌아가기</a>
+
 
 </body>
 </html>

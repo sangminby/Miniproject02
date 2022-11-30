@@ -15,7 +15,7 @@ public class SaleReadController {
     @GetMapping("/sale/read")
     public void readProduct(Model model, int pnumber){
 
-        model.addAttribute("product",readService.read(pnumber));
+        model.addAttribute("sale",readService.read(pnumber));
 
     }
 

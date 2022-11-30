@@ -24,12 +24,14 @@
     <c:forEach var="sale" items="${list}" varStatus="stat">
     <tr>
 
-        <td><a href="/todo/read?pnumber=${product.pnumber}"></a>${product.pname}</td>
-        <td><img src="/image/${product.image}" id="img"></td>
+        <td><a href="/todo/read?pnumber=${sale.pnumber}"></a>${sale.pname}</td>
+        <td><img src="/image/${sale.image}" id="img"></td>
+
 
     </tr>
     </c:forEach>
 
+    <a href="/sale/delete?pnumber=${sale.pnumber}">삭제</a>
 
 
 <%--

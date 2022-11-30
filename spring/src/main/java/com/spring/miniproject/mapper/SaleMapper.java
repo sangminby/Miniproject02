@@ -17,12 +17,12 @@ public interface SaleMapper {
     int saleSave(Sale sale);
 
     @Select("select * from sale where pnumber=#{pnumber}")
-    Sale saleRead(int bid);
+    Sale saleRead(int pnumber);
 
     int saleModify (Sale sale);
 
     @Delete("delete from sale where pnumber=#{pnumber}")
-    int saleDelete(int bid);
+    int saleDelete(int pnumber);
 
 
 
