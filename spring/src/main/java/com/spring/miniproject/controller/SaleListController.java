@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SaleListController {
 
     @Autowired
-    private SaleListService listService;
+    private SaleListService SalelistService;
 
     @RequestMapping("/sale/list")
     public String getList(Model model) {
 
-        model.addAttribute("list", listService.getSaleList());
+        model.addAttribute("list", SalelistService.getSaleList());
 
         return "/sale/list";
     }

@@ -20,13 +20,13 @@
 
         </logger>
 
-        <logger name="com.app.manager.mapper" level="trace" additivity="false">
+        <logger name="com.spring.miniproject.mapper" level="trace" additivity="false">
 
             <AppendRef ref="Console"/>
 
         </logger>
 
-        <logger name="com.app.manager" level="info" additibity="false">
+        <logger name="com.spring.miniproject" level="info" additibity="false">
 
             <AppenderRef ref="Console"/>
 

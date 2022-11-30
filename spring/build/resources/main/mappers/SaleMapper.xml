@@ -1,0 +1,19 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.miniproject.mapper.SaleMapper">
+
+    <insert id="saleSave" parameterType="com.spring.miniproject.domain.Sale">
+
+        insert into sale values(pnumber=#{pnumber}, pname=#{pname}, price=#{price}, image=#{image})
+
+    </insert>
+
+    <update id="saleModify" parameterType="com.spring.miniproject.domain.Sale">
+
+        update sale set pname=#{pname}, price=#{price}, image=#{image} where pnumber=#{pnumber}
+
+    </update>
+
+</mapper>

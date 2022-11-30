@@ -1,6 +1,7 @@
 package com.spring.miniproject.domain;
 
 import lombok.*;
+import org.springframework.web.multipart.MultipartFile;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -13,6 +14,6 @@ public class Sale {
     private int pnumber;
     private String pname;
     private int price;
-    private String image;
+    private MultipartFile image;
 
 }
