@@ -14,7 +14,7 @@
 
 <h2>상품등록</h2>
 
-<form>
+<form method="post" enctype="multipart/form-data">
   <table>
     <tr>
       <td>상품명</td>

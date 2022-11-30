@@ -6,7 +6,7 @@
 
     <insert id="saleSave" parameterType="com.spring.miniproject.domain.Sale">
 
-        insert into sale values(pnumber=#{pnumber}, pname=#{pname}, price=#{price}, image=#{image})
+        insert into sale (pname, price, image) values(#{pname}, #{price}, #{image})
 
     </insert>
 
