@@ -25,9 +25,9 @@ public class SaleSaveController {
     }
 
     @PostMapping
-    public String saveProduct(Sale sale){
+    public String saveProduct(SaleSaveReq saleSaveReq, HttpServletRequest request){
 
-        saleSaveService.save(sale);
+        saleSaveService.save(saleSaveReq, request);
 
         return "redirect:/sale/list";
     }

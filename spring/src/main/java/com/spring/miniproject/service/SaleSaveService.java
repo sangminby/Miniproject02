@@ -16,51 +16,51 @@ public class SaleSaveService {
     @Autowired(required = false)
     private SaleMapper saleMapper;
 
-//    public int save(SaleSaveReq saveReq, HttpServletRequest request){
-//
-//        String newImg = null;
-//
-//        if(saveReq.getImage() != null
-//                && !saveReq.getImage().isEmpty()
-//                && saveReq.getImage().getSize()>0){
-//
-//            String dirURi = "/image";
-//
-//            String dirRealpath = request.getSession().getServletContext().getRealPath(dirURi);
-//
-//            newImg = System.currentTimeMillis() + saveReq.getImage().getOriginalFilename();
-//
-//            try {
-//                saveReq.getImage().transferTo(new File(dirRealpath, newImg));
-//            } catch (IOException e) {
-////                throw new RuntimeException(e);
-//            }
-//
-//        }
-//
-//        Sale sale = saveReq.toSale();
-//
-//        if(newImg != null){
-//            sale.setImage(newImg);
-//        }
-//
-//
-//        return saleMapper.saleSave(sale);
-//    }
+    public int save(SaleSaveReq saveReq, HttpServletRequest request){
 
-    public int save(Sale sale) {
+        String newImg = null;
 
-        int result = 0;
+        if(saveReq.getImage() != null
+                && !saveReq.getImage().isEmpty()
+                && saveReq.getImage().getSize()>0){
 
-        try {
+            String dirURi = "/image";
 
-            result = saleMapper.saleSave(sale);
+            String dirRealpath = request.getSession().getServletContext().getRealPath(dirURi);
 
-        } catch (Exception e) {
+            newImg = System.currentTimeMillis() + saveReq.getImage().getOriginalFilename();
 
-            e.printStackTrace();
+            try {
+                saveReq.getImage().transferTo(new File(dirRealpath, newImg));
+            } catch (IOException e) {
+//                throw new RuntimeException(e);
+            }
+
         }
 
-        return result;
+        Sale sale = saveReq.toSale();
+
+        if(newImg != null){
+            sale.setImage(newImg);
+        }
+
+
+        return saleMapper.saleSave(saveReq.toSale());
     }
+
+//    public int save(SaleSaveReq saleSaveReq) {
+//
+//        int result = 0;
+//
+//        try {
+//
+//            result = saleMapper.saleSave(saleSaveReq.toSale());
+//
+//        } catch (Exception e) {
+//
+//            e.printStackTrace();
+//        }
+//
+//        return result;
+//    }
 }
