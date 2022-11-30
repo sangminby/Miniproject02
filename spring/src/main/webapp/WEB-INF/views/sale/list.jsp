@@ -36,9 +36,10 @@
   <tr>
 
     <td>상품번호</td>
+    <td></td>
     <td>상품명</td>
     <td>판매금액</td>
-    <td></td>
+
 
   </tr>
 
@@ -47,9 +48,10 @@
     <tr>
 
       <td>${sale.pnumber}</td>
+      <td><img src="/image/${sale.image}" id="img"></td>
       <td>${sale.pname}</td>
       <td>${sale.price}</td>
-      <td><img src="/image/${sale.image}" id="img"></td>
+
 
     </tr>
 
