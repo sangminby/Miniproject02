@@ -24,7 +24,4 @@ public interface SaleMapper {
     @Delete("delete from sale where pnumber=#{pnumber}")
     int saleDelete(int pnumber);
 
-
-
-
 }

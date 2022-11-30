@@ -15,7 +15,7 @@
   <h1>상품 수정</h1>
   <hr>
 
-  <form action="/sale/modify" method="post" enctype="multipart/form-data">
+  <form action="/sale/modify" method="post">
 
     <table>
 
