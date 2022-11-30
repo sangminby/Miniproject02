@@ -15,5 +15,6 @@ public class ShopMember {
     private String pw;
     private String uname;
     private String uaddress;
+    private String uaddress2;
 
 }

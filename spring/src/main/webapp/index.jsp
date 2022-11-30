@@ -24,6 +24,8 @@
         <li>카테고리 </li>
         <li> <a href="/sale/list">상품 구경하기</a> </li>
 
+        <li><a href="/member/register">회원가입</a></li>
+
 <%--        <c:if test="${loginInfoDTO eq null}">--%>
 
 <%--            <li><a href="/login">로그인</a></li>--%>
