@@ -14,7 +14,7 @@ public interface SaleMapper {
     @Select("select * from sale")
     List<Sale> saleList() throws SQLException;
 
-    int saleSave (Sale sale);
+    int saleSave(Sale sale);
 
     @Select("select * from sale where pnumber=#{pnumber}")
     Sale saleRead(int bid);

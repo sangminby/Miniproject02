@@ -1,5 +1,6 @@
 package com.spring.miniproject.controller;
 
+import com.spring.miniproject.domain.Sale;
 import com.spring.miniproject.domain.SaleSaveReq;
 import com.spring.miniproject.service.SaleSaveService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,13 +21,13 @@ public class SaleSaveController {
     @GetMapping
     public String saveForm(){
 
-        return "sale/save";
+        return "/sale/save";
     }
 
     @PostMapping
-    public String saveProduct(SaleSaveReq saveReq, HttpServletRequest request){
+    public String saveProduct(Sale sale){
 
-        saleSaveService.save(saveReq, request);
+        saleSaveService.save(sale);
 
         return "redirect:/sale/list";
     }

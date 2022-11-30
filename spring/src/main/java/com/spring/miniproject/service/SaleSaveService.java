@@ -16,35 +16,51 @@ public class SaleSaveService {
     @Autowired(required = false)
     private SaleMapper saleMapper;
 
-    public int save(SaleSaveReq saveReq, HttpServletRequest request){
+//    public int save(SaleSaveReq saveReq, HttpServletRequest request){
+//
+//        String newImg = null;
+//
+//        if(saveReq.getImage() != null
+//                && !saveReq.getImage().isEmpty()
+//                && saveReq.getImage().getSize()>0){
+//
+//            String dirURi = "/image";
+//
+//            String dirRealpath = request.getSession().getServletContext().getRealPath(dirURi);
+//
+//            newImg = System.currentTimeMillis() + saveReq.getImage().getOriginalFilename();
+//
+//            try {
+//                saveReq.getImage().transferTo(new File(dirRealpath, newImg));
+//            } catch (IOException e) {
+////                throw new RuntimeException(e);
+//            }
+//
+//        }
+//
+//        Sale sale = saveReq.toSale();
+//
+//        if(newImg != null){
+//            sale.setImage(newImg);
+//        }
+//
+//
+//        return saleMapper.saleSave(sale);
+//    }
 
-        String newImg = null;
+    public int save(Sale sale) {
 
-        if(saveReq.getImage() != null
-                && !saveReq.getImage().isEmpty()
-                && saveReq.getImage().getSize()>0){
+        int result = 0;
 
-            String dirURi = "/image";
+        try {
 
-            String dirRealpath = request.getSession().getServletContext().getRealPath(dirURi);
+            result = saleMapper.saleSave(sale);
 
-            newImg = System.currentTimeMillis() + saveReq.getImage().getOriginalFilename();
+        } catch (Exception e) {
 
-            try {
-                saveReq.getImage().transferTo(new File(dirRealpath, newImg));
-            } catch (IOException e) {
-//                throw new RuntimeException(e);
-            }
-
+            e.printStackTrace();
         }
 
-        Sale sale = saveReq.toSale();
-
-        if(newImg != null){
-            sale.setImage(newImg);
-        }
-
-
-        return saleMapper.saleSave(sale);
+        return result;
     }
 }
