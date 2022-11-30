@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56c02d1d-efee-4bce-8643-66fbb719b6be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/miniproject/controller/ListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/miniproject/domain/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/miniproject/controller/SaleListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/miniproject/service/ListService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/miniproject/domain/ShopMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/miniproject/domain/ShopMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/miniproject/domain/Shopping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/miniproject/domain/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/miniproject/controller/ListController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/miniproject/mapper/SaleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/miniproject/mapper/SaleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/SaleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/SaleMapper.xml" afterDir="false" />
     </list>
@@ -168,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669769092075</updated>
       <workItem from="1669769093259" duration="1000" />
-      <workItem from="1669769280709" duration="8725000" />
+      <workItem from="1669769280709" duration="9916000" />
     </task>
     <servers />
   </component>
