@@ -14,5 +14,6 @@ public class ShopMember {
     private String sid;
     private String spw;
     private String sname;
+    private String saddress;
 
 }
