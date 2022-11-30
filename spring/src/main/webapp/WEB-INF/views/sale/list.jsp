@@ -19,6 +19,11 @@
       text-align: center;
     }
 
+    #img{
+      width: 50px;
+      height: 50px;
+    }
+
   </style>
 
 </head>
@@ -44,7 +49,7 @@
       <td>${sale.pnumber}</td>
       <td>${sale.pname}</td>
       <td>${sale.price}</td>
-      <td>${sale.image}</td>
+      <td><img src="/image/${sale.image}" id="img"></td>
 
     </tr>
 

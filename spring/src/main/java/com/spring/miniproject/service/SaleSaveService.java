@@ -45,7 +45,7 @@ public class SaleSaveService {
         }
 
 
-        return saleMapper.saleSave(saveReq.toSale());
+        return saleMapper.saleSave(sale);
     }
 
 //    public int save(SaleSaveReq saleSaveReq) {
