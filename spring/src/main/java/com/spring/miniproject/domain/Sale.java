@@ -14,6 +14,6 @@ public class Sale {
     private int pnumber;
     private String pname;
     private int price;
-    private MultipartFile image;
+    private String image;
 
 }
