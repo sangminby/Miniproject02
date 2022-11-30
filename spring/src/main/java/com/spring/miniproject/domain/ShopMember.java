@@ -8,7 +8,7 @@ import lombok.*;
 @Setter
 @ToString
 @Builder
-public class ShowMember {
+public class ShopMember {
 
     private int idx;
     private String sid;
