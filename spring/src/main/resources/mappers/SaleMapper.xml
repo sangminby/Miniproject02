@@ -16,7 +16,7 @@
 
     </update>
 
-    <select id="searchOptionByPrice" resultType="com.spring.miniproject.domain.Sale">
+    <select id="searchOptionByAll" resultType="com.spring.miniproject.domain.Sale">
 
         select * from sale
         <where>
@@ -37,6 +37,5 @@
         </where>
 
     </select>
-
 
 </mapper>

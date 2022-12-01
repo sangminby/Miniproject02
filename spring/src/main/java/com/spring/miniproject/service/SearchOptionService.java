@@ -16,7 +16,7 @@ public class SearchOptionService {
 
     public List<Sale> getSearchList(SearchOption searchOption) {
 
-        return saleMapper.searchOptionByPrice(searchOption);
+        return saleMapper.searchOptionByAll(searchOption);
     }
-
+    
 }
