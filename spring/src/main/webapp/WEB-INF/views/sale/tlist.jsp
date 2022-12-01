@@ -103,7 +103,7 @@
 
   <div class="my-3 p-3 bg-white rounded box-shadow">
 
-    <h6 class="border-bottom border-gray pb-2 mb-0">전체 리스트</h6>
+    <h6 class="border-bottom border-gray pb-2 mb-0">상의 리스트</h6>
 
     <div class="m-3 p-1 border" >
 
@@ -145,7 +145,6 @@
       <tr>
 
         <th>상품번호</th>
-        <th>카테고리</th>
         <th></th>
         <th>상품명</th>
         <th>판매금액</th>
@@ -154,12 +153,11 @@
 
       </thead>
 
-      <c:forEach var="sale" items="${list}">
+      <c:forEach var="sale" items="${tlist}">
 
         <tr>
 
           <td>${sale.pnumber}</td>
-          <td>${sale.category}</td>
           <td><a href="/sale/read?pnumber=${sale.pnumber}"><img src="/image/${sale.image}" id="img"></a></td>
           <td><a href="/sale/read?pnumber=${sale.pnumber}">${sale.pname}</a></td>
           <td>${sale.price}</td>

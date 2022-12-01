@@ -14,6 +14,8 @@ public interface SaleMapper {
 
     @Select("select * from sale")
     List<Sale> saleList();
+    @Select("Select * from sale where category=#{category}")
+    List<Sale> tList();
 
     int saleSave(Sale sale);
 
