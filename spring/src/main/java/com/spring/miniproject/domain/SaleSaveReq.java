@@ -11,12 +11,15 @@ import org.springframework.web.multipart.MultipartFile;
 @Builder
 public class SaleSaveReq {
 
+    private int category;
     private String pname;
     private int price;
     private MultipartFile image;
 
+
     public Sale toSale(){
         Sale sale = Sale.builder()
+                .category(this.category)
                 .pname(this.pname)
                 .price(this.price)
                 .build();

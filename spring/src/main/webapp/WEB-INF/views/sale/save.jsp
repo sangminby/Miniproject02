@@ -24,7 +24,7 @@
   <table>
     <tr>
 
-      카테고리 <select id="category">
+      카테고리 <select name="category">
         <option value="1">상의</option>
         <option value="2">하의</option>
         <option value="3">잡화</option>

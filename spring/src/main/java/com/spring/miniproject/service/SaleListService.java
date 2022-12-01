@@ -31,5 +31,16 @@ public class SaleListService {
 
         return list;
     }
+/*
+
+    public List<Sale> getTopList(){
+
+        List<Sale> tlist = null;
+        if(cateogry == 1) {
+            tlist = saleMapper.saleList();
+        }
+        return tlist;
+    }
+*/
 
 }

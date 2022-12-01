@@ -48,19 +48,4 @@ public class SaleSaveService {
         return saleMapper.saleSave(sale);
     }
 
-//    public int save(SaleSaveReq saleSaveReq) {
-//
-//        int result = 0;
-//
-//        try {
-//
-//            result = saleMapper.saleSave(saleSaveReq.toSale());
-//
-//        } catch (Exception e) {
-//
-//            e.printStackTrace();
-//        }
-//
-//        return result;
-//    }
 }
