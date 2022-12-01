@@ -17,7 +17,6 @@ public class SaleListService {
     @Autowired(required = false)
     private Sale sale;
 
-/*
     public List<Sale> getSaleList() {
 
         List<Sale> list = null;
@@ -33,15 +32,6 @@ public class SaleListService {
         }
 
         return list;
-    }*/
-
-
-    public List<Sale> getTopList() {
-
-        List<Sale> tlist = null;
-        if (sale.getCategory() == 1) {
-            tlist = saleMapper.tList();
-        }
-        return tlist;
     }
+
 }

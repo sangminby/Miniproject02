@@ -12,7 +12,7 @@
 
     <update id="saleModify" parameterType="com.spring.miniproject.domain.Sale">
 
-        update sale set category=#{category} pname=#{pname}, price=#{price}, image=#{image} where pnumber=#{pnumber}
+        update sale set pname=#{pname}, price=#{price}, image=#{image} where pnumber=#{pnumber}
 
     </update>
 
@@ -35,6 +35,24 @@
 
 
         </where>
+
+    </select>
+    
+    <select id="categoryOne" resultType="com.spring.miniproject.domain.Sale">
+
+        select pnumber, category, pname, price, image from sale where category=1
+
+    </select>
+
+    <select id="categoryTwo" resultType="com.spring.miniproject.domain.Sale">
+
+        select pnumber, category, pname, price, image from sale where category=2
+
+    </select>
+
+    <select id="categoryThree" resultType="com.spring.miniproject.domain.Sale">
+
+        select pnumber, category, pname, price, image from sale where category=3
 
     </select>
 
