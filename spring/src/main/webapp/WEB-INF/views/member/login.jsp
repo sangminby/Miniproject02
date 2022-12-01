@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<form>
+<form method="post">
     <table>
         <tr>
             <td>아이디</td>

@@ -10,7 +10,5 @@ import lombok.*;
 @Builder
 public class LoginInfo {
 
-    private String uid;
     private String uname;
-    private String uaddress;
 }

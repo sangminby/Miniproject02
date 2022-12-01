@@ -22,28 +22,17 @@
 <ul>
 
     <li>카테고리 </li>
-    <li> <a href="/sale/list">상품 구경하기</a> </li>
 
-    <li><a href="/member/register">회원가입</a></li>
+    <c:if test="${loginInfo eq null}">
+        <li><a href="/login">로그인</a></li>
+        <li><a href="/member/register">회원가입</a></li>
+    </c:if>
 
-    <li><a href="/login">로그인</a></li>
-
-    <li><a href="/logout">로그아웃</a></li>--%>
-
-
-    <%--        <c:if test="${loginInfoDTO eq null}">--%>
-
-    <%--            <li><a href="/login">로그인</a></li>--%>
-    <%--            <li><a href="/testmember/register">회원가입</a></li>--%>
-
-    <%--        </c:if>--%>
-
-    <%--        <c:if test="${loginInfoDTO ne null}">--%>
-
-    <%--            <li>${loginInfoDTO.uid} ( ${loginInfoDTO.uname} ) <img src="/savefile/member/${loginInfoDTO.uphoto}"> </li>--%>
-    <%--            <li><a href="/logout">로그아웃</a></li>--%>
-
-    <%--        </c:if>--%>
+    <c:if test="${loginInfo ne null}">
+        <li> "${loginInfo.uname}"</li>
+        <li> <a href="/sale/list">상품 구경하기</a> </li>
+        <li><a href="/logout"> 로그아웃 </a></li>
+    </c:if>
 
 </ul>
 

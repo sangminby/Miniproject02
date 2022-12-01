@@ -34,7 +34,6 @@ public class MemberLoginController {
             HttpSession session = request.getSession();
             session.setAttribute("loginInfo", member.toLogin());
 
-
         }
 
         return "redirect:/index";

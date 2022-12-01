@@ -20,9 +20,7 @@ public class ShopMember {
 
     public LoginInfo toLogin(){
         return LoginInfo.builder()
-                .uid(this.uid)
                 .uname(this.uname)
-                .uaddress(this.uaddress)
                 .build();
     }
 
