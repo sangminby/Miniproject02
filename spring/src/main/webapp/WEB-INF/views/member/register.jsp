@@ -38,66 +38,58 @@
         <td>주소</td>
         <td>
 
-          <input type="text" id="sample4_postcode" placeholder="우편번호">
-          <input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
-          <input type="text" name="uaddress" id="sample4_roadAddress" placeholder="도로명주소">
-          <input type="text" id="sample4_jibunAddress" placeholder="지번주소">
-          <span id="guide" style="color:#999;display:none"></span>
-          <input type="text" name="uaddress2" id="sample4_detailAddress" placeholder="상세주소">
-          <input type="text" id="sample4_extraAddress" placeholder="참고항목">
+          <input type="text" name="uaddress" id="sample5_address" placeholder="주소">
+          <input type="button" onclick="sample5_execDaumPostcode()" value="주소 검색"><br>
+          <div id="map" style="width:300px;height:300px;margin-top:10px;display:none"></div>
 
           <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+          <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 API KEY를 사용하세요&libraries=services"></script>
           <script>
+            var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+                    mapOption = {
+                      center: new daum.maps.LatLng(37.537187, 127.005476), // 지도의 중심좌표
+                      level: 5 // 지도의 확대 레벨
+                    };
 
-            function sample4_execDaumPostcode() {
+            //지도를 미리 생성
+            var map = new daum.maps.Map(mapContainer, mapOption);
+            //주소-좌표 변환 객체를 생성
+            var geocoder = new daum.maps.services.Geocoder();
+            //마커를 미리 생성
+            var marker = new daum.maps.Marker({
+              position: new daum.maps.LatLng(37.537187, 127.005476),
+              map: map
+            });
+
+
+            function sample5_execDaumPostcode() {
               new daum.Postcode({
                 oncomplete: function(data) {
+                  var addr = data.address; // 최종 주소 변수
 
-                  var roadAddr = data.roadAddress;
-                  var extraRoadAddr = '';
+                  // 주소 정보를 해당 필드에 넣는다.
+                  document.getElementById("sample5_address").value = addr;
+                  // 주소로 상세 정보를 검색
+                  geocoder.addressSearch(data.address, function(results, status) {
+                    // 정상적으로 검색이 완료됐으면
+                    if (status === daum.maps.services.Status.OK) {
 
-                  if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
-                    extraRoadAddr += data.bname;
-                  }
+                      var result = results[0]; //첫번째 결과의 값을 활용
 
-                  if(data.buildingName !== '' && data.apartment === 'Y'){
-                    extraRoadAddr += (extraRoadAddr !== '' ? ', ' + data.buildingName : data.buildingName);
-                  }
-
-                  if(extraRoadAddr !== ''){
-                    extraRoadAddr = ' (' + extraRoadAddr + ')';
-                  }
-
-                  document.getElementById('sample4_postcode').value = data.zonecode;
-                  document.getElementById("sample4_roadAddress").value = roadAddr;
-                  document.getElementById("sample4_jibunAddress").value = data.jibunAddress;
-
-                  if(roadAddr !== ''){
-                    document.getElementById("sample4_extraAddress").value = extraRoadAddr;
-                  } else {
-                    document.getElementById("sample4_extraAddress").value = '';
-                  }
-
-                  var guideTextBox = document.getElementById("guide");
-
-                  if(data.autoRoadAddress) {
-                    var expRoadAddr = data.autoRoadAddress + extraRoadAddr;
-                    guideTextBox.innerHTML = '(예상 도로명 주소 : ' + expRoadAddr + ')';
-                    guideTextBox.style.display = 'block';
-
-                  } else if(data.autoJibunAddress) {
-                    var expJibunAddr = data.autoJibunAddress;
-                    guideTextBox.innerHTML = '(예상 지번 주소 : ' + expJibunAddr + ')';
-                    guideTextBox.style.display = 'block';
-
-                  } else {
-                    guideTextBox.innerHTML = '';
-                    guideTextBox.style.display = 'none';
-                  }
+                      // 해당 주소에 대한 좌표를 받아서
+                      var coords = new daum.maps.LatLng(result.y, result.x);
+                      // 지도를 보여준다.
+                      mapContainer.style.display = "block";
+                      map.relayout();
+                      // 지도 중심을 변경한다.
+                      map.setCenter(coords);
+                      // 마커를 결과값으로 받은 위치로 옮긴다.
+                      marker.setPosition(coords)
+                    }
+                  });
                 }
               }).open();
             }
-
           </script>
 
         </td>
