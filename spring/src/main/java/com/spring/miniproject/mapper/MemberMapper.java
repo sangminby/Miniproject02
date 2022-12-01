@@ -4,6 +4,8 @@ import com.spring.miniproject.domain.ShopMember;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
+import java.sql.SQLException;
+
 @Mapper
 public interface MemberMapper {
 
