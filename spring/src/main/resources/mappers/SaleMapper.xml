@@ -6,13 +6,13 @@
 
     <insert id="saleSave" parameterType="com.spring.miniproject.domain.Sale">
 
-        insert into sale (pname, price, image) values (#{pname}, #{price}, #{image})
+        insert into sale (category, pname, price, image) values (#{category}, #{pname}, #{price}, #{image})
 
     </insert>
 
     <update id="saleModify" parameterType="com.spring.miniproject.domain.Sale">
 
-        update sale set pname=#{pname}, price=#{price}, image=#{image} where pnumber=#{pnumber}
+        update sale set category=#{category} pname=#{pname}, price=#{price}, image=#{image} where pnumber=#{pnumber}
 
     </update>
 

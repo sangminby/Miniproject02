@@ -18,5 +18,5 @@ public class SearchOptionService {
 
         return saleMapper.searchOptionByAll(searchOption);
     }
-    
+
 }
