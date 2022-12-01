@@ -123,7 +123,7 @@
             </td>
 
             <td class="p-2">
-              <input type="text" class="form-control" name="keyword">
+              <input type="text" class="form-control" name="keyWord">
             </td>
 
             <td class="p-2">

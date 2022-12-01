@@ -40,18 +40,17 @@
     </bean>
 
 
-
     <!-- 로그인 체크하는 인터셉터 등록 -->
-<!--    <mvc:interceptors>-->
+    <mvc:interceptors>
 
-<!--        <mvc:interceptor>-->
+        <mvc:interceptor>
 
-<!--            <mvc:mapping path="/testtodo/**"/>-->
-<!--            <bean class="com.firstcoding.todo.interceptor.AuthCheckInterceptor"/>-->
+            <mvc:mapping path="/sale/**"/>
+            <bean class="com.spring.miniproject.interceptor.AuthCheckInterceptor"/>
 
-<!--        </mvc:interceptor>-->
+        </mvc:interceptor>
 
-<!--    </mvc:interceptors>-->
+    </mvc:interceptors>
 
 
     <!-- Formatter 설정 -->

@@ -16,4 +16,27 @@
 
     </update>
 
+    <select id="searchOptionByPrice" resultType="com.spring.miniproject.domain.Sale">
+
+        select * from sale
+        <where>
+
+            <if test="searchType != null and keyWord != null">
+
+                <if test="searchType == 'pname'">
+                    pname like concat('%', #{keyWord}, '%')
+                </if>
+
+                <if test="searchType == 'price'">
+                    price like concat('%', #{keyWord}, '%')
+                </if>
+
+            </if>
+
+
+        </where>
+
+    </select>
+
+
 </mapper>
