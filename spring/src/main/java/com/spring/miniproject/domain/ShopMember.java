@@ -17,4 +17,13 @@ public class ShopMember {
     private String uaddress;
     private String uaddress2;
 
+
+    public LoginInfo toLogin(){
+        return LoginInfo.builder()
+                .uid(this.uid)
+                .uname(this.uname)
+                .uaddress(this.uaddress)
+                .build();
+    }
+
 }

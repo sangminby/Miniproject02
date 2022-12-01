@@ -26,6 +26,11 @@
 
     <li><a href="/member/register">회원가입</a></li>
 
+    <li><a href="/login">로그인</a></li>
+
+    <li><a href="/logout">로그아웃</a></li>--%>
+
+
     <%--        <c:if test="${loginInfoDTO eq null}">--%>
 
     <%--            <li><a href="/login">로그인</a></li>--%>
