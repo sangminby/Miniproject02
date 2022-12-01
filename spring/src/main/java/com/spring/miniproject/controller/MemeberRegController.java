@@ -27,7 +27,7 @@ public class MemeberRegController {
 
         memberRegService.memberReg(shopMember);
 
-        return "/index";
+        return "redirect:/index";
     }
 
 }
