@@ -25,6 +25,11 @@
       </tr>
 
       <tr>
+        <td>카테고리</td>
+        <td><input type="number" name="category" value="${sale.category}"></td>
+      </tr>
+
+      <tr>
         <td>상품명</td>
         <td><input type="text" name="pname" value="${sale.pname}"></td>
       </tr>

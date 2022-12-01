@@ -15,6 +15,7 @@
 
 <table>
     <tr>
+        <td>카테고리</td>
         <td>상품명</td>
         <td>상세이미지</td>
 
@@ -23,6 +24,7 @@
     <c:forEach var="sale" items="${list}" varStatus="stat">
     <tr>
 
+        <td>${sale.category}</td>
         <td><a href="/sale/read?pnumber=${sale.pnumber}"></a>${sale.pname}</td>
         <td><img src="/image/${sale.image}" id="img"></td>
 

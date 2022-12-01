@@ -7,6 +7,12 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<style>
+  #category{
+
+    margin-left: 18px;
+  }
+</style>
 <head>
     <title>상품등록</title>
 </head>
@@ -16,6 +22,15 @@
 
 <form method="post" enctype="multipart/form-data">
   <table>
+    <tr>
+
+      카테고리 <select id="category">
+        <option value="1">상의</option>
+        <option value="2">하의</option>
+        <option value="3">잡화</option>
+
+      </select>
+    </tr>
     <tr>
       <td>상품명</td>
       <td><input type="text" name="pname"></td>
