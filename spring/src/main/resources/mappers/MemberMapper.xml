@@ -8,6 +8,4 @@
         insert into shopmember (uid, pw, uname, uaddress) values (#{uid}, #{pw}, #{uname},#{uaddress})
     </insert>
 
-
-
 </mapper>

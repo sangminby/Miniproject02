@@ -1,15 +1,14 @@
 package com.spring.miniproject.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.servlet.http.HttpSession;
 
 @Controller
-@RequestMapping("/logout")
 public class MemberLogoutController {
 
-
+    @GetMapping("/logout")
     public String logout(HttpSession httpSession){
 
         httpSession.invalidate();
