@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SaleListController {
 
     @Autowired
-    private SaleListService SalelistService;
+    private SaleListService saleListService;
 
     @Autowired
     private SearchOptionService searchOptionService;
@@ -22,14 +22,23 @@ public class SaleListController {
     @Autowired
     private InsertOptionService insertOptionService;
 
-
     @RequestMapping("/sale/list")
+    public String allList(Model model){
+
+        model.addAttribute("list", saleListService.getSaleList());
+
+        return "/sale/list";
+    }
+/*
+
+    @RequestMapping
     public String getList(SearchOption searchOption, Model model) {
 
         model.addAttribute("list", searchOptionService.getSearchList(searchOption));
 
         return "/sale/list";
     }
+*/
 
     @RequestMapping("/sale/list1")
     public String getOne(Sale sale, Model model) {

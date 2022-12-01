@@ -11,7 +11,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Builder
 public class SaleSaveReq {
 
-    private int category;
+    private String category;
     private String pname;
     private int price;
     private MultipartFile image;

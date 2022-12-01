@@ -14,24 +14,11 @@ public class SaleListService {
     @Autowired(required = false)
     private SaleMapper saleMapper;
 
-    @Autowired(required = false)
-    private Sale sale;
 
     public List<Sale> getSaleList() {
 
-        List<Sale> list = null;
-
-        try {
-            list = saleMapper.saleList();
-
-        } catch (Exception e) {
-
-            e.printStackTrace();
-
-            list = Collections.emptyList();
-        }
-
-        return list;
+        return saleMapper.saleList();
     }
+
 
 }

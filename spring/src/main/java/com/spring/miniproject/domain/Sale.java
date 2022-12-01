@@ -12,7 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class Sale {
 
     private int pnumber;
-    private int category;
+    private String category;
     private String pname;
     private int price;
     private String image;

@@ -56,4 +56,11 @@
 
     </select>
 
+
+    <select id="saleList" resultType="com.spring.miniproject.domain.Sale">
+        select pnumber, pname, price, image,
+        case when category=1 then '상의' when category =2 then '하의' else '잡화' end as 'category' from sale
+    </select>
+
+
 </mapper>

@@ -11,7 +11,7 @@ import java.util.List;
 @Mapper
 public interface SaleMapper {
 
-    @Select("select * from sale")
+
     List<Sale> saleList();
 
     int saleSave(Sale sale);
