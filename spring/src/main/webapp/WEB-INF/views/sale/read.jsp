@@ -85,7 +85,7 @@
 
                 <div class="row">
 
-                    <div class="col-6"><img src="/image" ${sale.image} width="300px"></div>
+                    <div class="col-6"><img src="/image" ${sale.image} width="500px"></div>
 
 
                     <div class="card" col-6>
@@ -101,6 +101,7 @@
 
                 </section>
 
+                <a href="/sale/modify?pnumber=${sale.pnumber}" style="margin-left: 1000px">수정</a> <a href="/sale/delete?pnumber=${sale.pnumber}">삭제</a>
 
             </div>
 
