@@ -113,23 +113,6 @@
 
             <div class="inner">
 
-                <!-- Search -->
-                <section id="search" class="alt">
-
-                    <form>
-
-                        <select name="searchType">
-                            <option value="pname">상품명</option>
-                            <option value="price">금액</option>
-                        </select>
-
-                        <input type="text" name="keyWord" placeholder="Search" />
-
-                    </form>
-
-                </section>
-
-
                 <!-- Menu -->
                 <nav id="menu">
 
