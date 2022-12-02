@@ -19,15 +19,20 @@
 
     <table>
 
+        <tr>
+
+            카테고리 <select name="category">
+            <option value="1">상의</option>
+            <option value="2">하의</option>
+            <option value="3">잡화</option>
+
+        </select>
+        </tr>
+
       <tr>
         <td>상품번호</td>
         <td><input type="number" name="pnumber" value="${sale.pnumber}" readonly></td>
       </tr>
-
-<%--      <tr>--%>
-<%--        <td>카테고리</td>--%>
-<%--        <td><input type="number" name="category" value="${sale.category}"></td>--%>
-<%--      </tr>--%>
 
       <tr>
         <td>상품명</td>
