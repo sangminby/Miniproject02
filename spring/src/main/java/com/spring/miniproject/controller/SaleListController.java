@@ -28,7 +28,7 @@ public class SaleListController {
 
         model.addAttribute("list", searchOptionService.getSearchList(searchOption));
 
-        return "/sale/list";
+        return "/WEB-INF/list.jsp";
     }
 
     @RequestMapping("/sale/list1")
