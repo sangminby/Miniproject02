@@ -11,9 +11,7 @@ import java.util.List;
 @Mapper
 public interface SaleMapper {
 
-
-    List<Sale> saleList();
-
+    
     int saleSave(Sale sale);
 
     @Select("select * from sale where pnumber=#{pnumber}")

@@ -3,7 +3,7 @@ package com.spring.miniproject.controller;
 import com.spring.miniproject.domain.Sale;
 import com.spring.miniproject.domain.SearchOption;
 import com.spring.miniproject.service.InsertOptionService;
-import com.spring.miniproject.service.SaleListService;
+
 import com.spring.miniproject.service.SearchOptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,9 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class SaleListController {
-
-    @Autowired
-    private SaleListService saleListService;
 
     @Autowired
     private SearchOptionService searchOptionService;
