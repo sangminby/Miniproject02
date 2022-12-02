@@ -68,7 +68,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
                   <div class="card"  style="width: 18rem;">
 
-                    <img src="/image/${sale.image}" class="card-img-top">
+                    <img src="/image/${sale.image}" width="200px" class="card-img-top">
 
                     <div class="card-body">
                       <h5 class="card-title">${sale.pname}</h5>
