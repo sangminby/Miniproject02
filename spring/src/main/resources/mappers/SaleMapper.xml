@@ -40,27 +40,32 @@
     
     <select id="categoryOne" resultType="com.spring.miniproject.domain.Sale">
 
-        select pnumber, category, pname, price, image from sale where category=1
+        select c.category, s.pname, s.price, s.image from sale s, categorys c where s.category =c.idx and s.category=1
 
     </select>
 
     <select id="categoryTwo" resultType="com.spring.miniproject.domain.Sale">
 
-        select pnumber, category, pname, price, image from sale where category=2
+        select c.category, s.pname, s.price, s.image from sale s, categorys c where s.category =c.idx and s.category=2
 
     </select>
 
     <select id="categoryThree" resultType="com.spring.miniproject.domain.Sale">
 
-        select pnumber, category, pname, price, image from sale where category=3
+        select c.category, s.pname, s.price, s.image from sale s, categorys c where s.category =c.idx and s.category=3
 
     </select>
 
 
+<!--
     <select id="saleList" resultType="com.spring.miniproject.domain.Sale">
-        select pnumber, pname, price, image,
-        case when category=1 then '상의' when category =2 then '하의' else '잡화' end as 'category' from sale
+
+        select c.category, s.pname, s.price, s.image from sale s, categorys c where s.category =c.idx
+
+&lt;!&ndash;        select
+        case when category=1 then '상의' when category =2 then '하의' else '잡화' end as 'category' from sale&ndash;&gt;
     </select>
+-->
 
 
 </mapper>
