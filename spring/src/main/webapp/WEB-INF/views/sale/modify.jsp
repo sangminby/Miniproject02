@@ -5,15 +5,15 @@ html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 
     <title>다있소</title>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="/css/main.css"/>
 
 </head>
 <body class="is-preload">
@@ -30,20 +30,22 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
                 <a href="/index.jsp" class="logo"><strong>다있소</strong> ShoppingMall</a>
 
-                <ul>
+                <div class="align-right">
+                    <ul>
 
-                    <c:if test="${loginInfo eq null}">
-                        <a href="/login">로그인</a><br>
-                        <a href="/member/register">회원가입</a>
-                    </c:if>
+                        <c:if test="${loginInfo eq null}">
+                            <a href="/login">로그인</a><br>
+                            <a href="/member/register">회원가입</a>
+                        </c:if>
 
-                    <c:if test="${loginInfo ne null}">
-                        ${loginInfo.uname}님 환영합니다.<br>
-                        <a href="/sale/list">상품 구경하기</a><br>
-                        <a href="/logout"> 로그아웃 </a>
-                    </c:if>
+                        <c:if test="${loginInfo ne null}">
+                            ${loginInfo.uname}님 환영합니다.<br>
+                            <a href="/sale/list">상품 구경하기</a><br>
+                            <a href="/logout"> 로그아웃 </a><br>
+                        </c:if>
 
-                </ul>
+                    </ul>
+                </div>
 
             </header>
 

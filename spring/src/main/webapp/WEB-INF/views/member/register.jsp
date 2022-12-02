@@ -30,20 +30,22 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
         <a href="/index.jsp" class="logo"><strong>다있소</strong> ShoppingMall</a>
 
-        <ul>
+        <div class="align-right">
+          <ul>
 
-          <c:if test="${loginInfo eq null}">
-            <a href="/login">로그인</a><br>
-            <a href="/member/register">회원가입</a>
-          </c:if>
+            <c:if test="${loginInfo eq null}">
+              <a href="/login">로그인</a><br>
+              <a href="/member/register">회원가입</a>
+            </c:if>
 
-          <c:if test="${loginInfo ne null}">
-            ${loginInfo.uname}님 환영합니다.<br>
-            <a href="/sale/list">상품 구경하기</a><br>
-            <a href="/logout"> 로그아웃 </a>
-          </c:if>
+            <c:if test="${loginInfo ne null}">
+              ${loginInfo.uname}님 환영합니다.<br>
+              <a href="/sale/list">상품 구경하기</a><br>
+              <a href="/logout"> 로그아웃 </a><br>
+            </c:if>
 
-        </ul>
+          </ul>
+        </div>
 
       </header>
 
@@ -145,23 +147,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
   <div id="sidebar">
 
     <div class="inner">
-
-      <!-- Search -->
-      <section id="search" class="alt">
-
-        <form>
-
-          <select name="searchType">
-            <option value="pname">상품명</option>
-            <option value="price">금액</option>
-          </select>
-
-          <input type="text" name="keyWord" placeholder="Search"/>
-
-        </form>
-
-      </section>
-
 
       <!-- Menu -->
       <nav id="menu">

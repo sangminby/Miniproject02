@@ -30,6 +30,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
         <a href="/index.jsp" class="logo"><strong>다있소</strong> ShoppingMall</a>
 
+        <div class="align-right">
         <ul>
 
           <c:if test="${loginInfo eq null}">
@@ -44,7 +45,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
           </c:if>
 
         </ul>
-
+        </div>
       </header>
 
 
