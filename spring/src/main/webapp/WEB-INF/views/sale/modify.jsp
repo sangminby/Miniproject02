@@ -40,7 +40,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
                         <c:if test="${loginInfo ne null}">
                             ${loginInfo.uname}님 환영합니다.<br>
-                            <a href="/sale/list">상품 구경하기</a><br>
                             <a href="/logout"> 로그아웃 </a><br>
                         </c:if>
 

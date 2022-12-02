@@ -1,35 +1,3 @@
-<%--
-
-<body>
-
-
-<table>
-    <tr>
-        <td>상품명</td>
-        <td>카테고리</td>
-        <td>상품명</td>
-        <td>상세이미지</td>
-    </tr>
-
-    <c:forEach var="sale" items="${list}" varStatus="stat">
-    <tr>
-
-        <td>${sale.pnumber}</td>
-        <td>${sale.category}</td>
-        <td><a href="/sale/read?pnumber=${sale.pnumber}"></a>${sale.pname}</td>
-        <td><img src="/image/${sale.image}" id="img"></td>
-
-
-    </tr>
-    </c:forEach>
-
-    <a href="/sale/modify?pnumber=${sale.pnumber}">수정</a> <a href="/sale/delete?pnumber=${sale.pnumber}">삭제</a>
-
-
-
-</div>
---%>
-
     <!DOCTYPE HTML>
     <!--
     Editorial by HTML5 UP
@@ -73,7 +41,6 @@
 
                             <c:if test="${loginInfo ne null}">
                                 ${loginInfo.uname}님 환영합니다.<br>
-                                <a href="/sale/list">상품 구경하기</a><br>
                                 <a href="/logout"> 로그아웃 </a><br>
                             </c:if>
 
@@ -108,7 +75,37 @@
             </div>
 
         </div>
+<%--
 
+        <c:if test="${requestScope.replyList != null}">
+            <c:forEach var="reply" items="${requestScope.replyList}">
+                <tr>
+                    <td width="150">
+                    <div>
+                        ${reply.replyer}<br>
+                        <font size="2" color="#d3d3d3">${reply.replyDate}</font>
+                    </div>
+                    </td>
+                    <td width="550">
+                        <div class="textwrapper">
+                            ${reply.reply}
+                        </div>
+                    </td>
+                    <td width="100">
+                        <div id="btn" style="text-align: center">
+                            <a href="#">답글</a><br>
+                            <c:if test="${reply.replyer == sessionScope.sessionUid}">
+                                <a href="#">수정</a><br>
+                                <a href="#">삭제</a>
+                            </c:if>
+                        </div>
+                    </td>
+                </tr>
+            </c:forEach>
+
+        </c:if>
+
+--%>
 
         <!-- Sidebar -->
         <div id="sidebar">
