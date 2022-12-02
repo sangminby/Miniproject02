@@ -21,9 +21,9 @@ public class SaleListController {
 
     @Autowired
     private InsertOptionService insertOptionService;
-    
 
-    @RequestMapping
+
+    @RequestMapping("/sale/list")
     public String getList(SearchOption searchOption, Model model) {
 
         model.addAttribute("list", searchOptionService.getSearchList(searchOption));

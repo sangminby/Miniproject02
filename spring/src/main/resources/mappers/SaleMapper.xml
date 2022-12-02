@@ -27,12 +27,12 @@
 
             <if test="searchType != null and keyWord != null">
 
-                <if test="searchType == 's.pname'">
-                    s.pname like concat('%', #{keyWord}, '%')
+                <if test="searchType == 'pname'">
+                    and pname like concat('%', #{keyWord}, '%')
                 </if>
 
-                <if test="searchType == 's.price'">
-                    s.price like concat('%', #{keyWord}, '%')
+                <if test="searchType == 'price'">
+                    and price like concat('%', #{keyWord}, '%')
                 </if>
 
             </if>
@@ -40,18 +40,21 @@
         </where>
 
     </select>
-    
+
+
     <select id="categoryOne" resultType="com.spring.miniproject.domain.Sale">
 
         select s.pnumber, c.category, s.pname, s.price, s.image from sale s, categorys c where s.category =c.idx and s.category=1
 
     </select>
 
+
     <select id="categoryTwo" resultType="com.spring.miniproject.domain.Sale">
 
         select s.pnumber, c.category, s.pname, s.price, s.image from sale s, categorys c where s.category =c.idx and s.category=2
 
     </select>
+
 
     <select id="categoryThree" resultType="com.spring.miniproject.domain.Sale">
 
