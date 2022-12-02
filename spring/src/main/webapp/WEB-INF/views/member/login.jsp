@@ -1,36 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: cheoho-hi
-  Date: 2022-11-30
-  Time: 오후 6:01
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-<form method="post">
-    <table>
-        <tr>
-            <td>아이디</td>
-            <td><input type="text" name="uid"></td>
-        </tr>
-        <tr>
-            <td>비밀번호</td>
-            <td><input type="password" name="pw"></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><input type="submit" value="로그인"></td>
-        </tr>
-
-    </table>
-</form>
-</body>
-</html>
-
 <!DOCTYPE HTML>
 <!--
 Editorial by HTML5 UP
@@ -66,102 +33,38 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <ul>
 
                     <c:if test="${loginInfo eq null}">
-                        <li><a href="/login">로그인</a></li>
-                        <li><a href="/member/register">회원가입</a></li>
+                        <a href="/login">로그인</a><br>
+                        <a href="/member/register">회원가입</a>
                     </c:if>
 
                     <c:if test="${loginInfo ne null}">
-                        <li> ${loginInfo.uname}님 환영합니다.</li>
-                        <li> <a href="/sale/list">상품 구경하기</a> </li>
-                        <li><a href="/logout"> 로그아웃 </a></li>
+                        ${loginInfo.uname}님 환영합니다.<br>
+                        <a href="/sale/list">상품 구경하기</a><br>
+                        <a href="/logout"> 로그아웃 </a>
                     </c:if>
 
                 </ul>
 
             </header>
 
+            <form method="post">
 
-            <!-- Banner -->
-            <section id="banner">
+                <table>
+                    <tr>
+                        <td>아이디</td>
+                        <td><input type="text" name="uid"></td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td>
+                        <td><input type="password" name="pw"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="로그인"></td>
+                    </tr>
 
-                <div class="content">
-
-                    <header>
-
-                        <h1>WINTER OUTER<br />
-                            COLLECTION</h1>
-                        <p>한파에도 문제없어, 겨울상의</p>
-
-                    </header>
-
-                    <ul class="actions">
-                        <li><a href="/sale/list1" class="button big">Learn More</a></li>
-                    </ul>
-
-                </div>
-
-                <span class="image object">
-          <img src="/image/jpg01.jpg" />
-        </span>
-
-            </section>
-
-            <!-- Section -->
-            <section>
-
-                <header class="major">
-                    <h2>NEW ITEMS</h2>
-                </header>
-
-                <div class="features">
-
-                    <article>
-
-                        <span class="icon fa-gem"></span>
-
-                        <div class="content">
-                            <h3>트윙클패드블라우스</h3>
-                            <p>입자마자 얼굴빛이 화사해지는 귀엽고 유니크한 깃털 블라우스♡ 소매의 플라워 단추를 톡- 달아서 사랑스럽게 마무리 해주었어요 *.* 여유로운핏+세미 크롭 기장으로 누구나 부담 없이 캐주얼하게- 특별한 연말룩으로 강추 드려요!</p>
-                        </div>
-
-                    </article>
-
-                    <article>
-
-                        <span class="icon solid fa-paper-plane"></span>
-
-                        <div class="content">
-                            <h3>부클트위드가디건</h3>
-                            <p>보슬보슬~ 헤어리한 원사로 포근함 가득 담아 제작한 트위드 CD- 자켓인 듯 가디건인 듯 폭넓게 즐길 수 있는 Premium 아이템이에요! 데일리룩,하객룩, 다가오는 연말룩으로 자신있게 추천드릴게요♡</p>
-                        </div>
-
-                    </article>
-
-                    <article>
-
-                        <span class="icon solid fa-rocket"></span>
-
-                        <div class="content">
-                            <h3>가든래글런하프코트</h3>
-                            <p>클래식한 무드로 코디 활용도 높은 하프코트 : ) 루즈한 핏에 래글런 소매 라인으로 부해 보임 없이 체형을 커버해 주는 아이템이에요! 포근한 2온스의 누빔 안감으로 따뜻하게 입어져 강력 추천♡</p>
-                        </div>
-
-                    </article>
-
-                    <article>
-
-                        <span class="icon solid fa-signal"></span>
-
-                        <div class="content">
-                            <h3>세일러오프숄더니트</h3>
-                            <p>큼직한 세일러 카라 넥으로 러블리한 오프숄더 니트- 포근한 APS 소재에 골지 짜임으로 편안하고 날씬해 보이는 아이템이에요 : ) 청순&여리한 무드로 데일리는 물론 연말룩으로도 강력 추천드려요♡</p>
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </section>
+                </table>
+            </form>
 
         </div>
 

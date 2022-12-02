@@ -5,91 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56c02d1d-efee-4bce-8643-66fbb719b6be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/oldindex.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fontawesome-all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/base/_page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/base/_reset.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/base/_typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_actions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_box.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_contact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_features.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_icon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_mini-posts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_posts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_section.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/components/_table.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/layout/_banner.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/layout/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/layout/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/layout/_main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/layout/_menu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/layout/_sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/layout/_wrapper.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/libs/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/libs/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/libs/_html-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/libs/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/libs/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/libs/_vendor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/sass/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/img02.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/image/jpg01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/breakpoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/browser.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/util.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/miniproject/controller/SaleListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/miniproject/controller/SaleListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/servlet-context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/member/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sale/tlist.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/form-validation.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap/offcanvas.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/assets/vendor/anchor.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/assets/vendor/clipboard.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/assets/vendor/holder.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/assets/vendor/jquery-slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/assets/vendor/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap/offcanvas.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
