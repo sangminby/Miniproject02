@@ -20,13 +20,15 @@
     <table>
 
         <tr>
+            <td>카테고리</td>
+            <td>
+                <select name="category">
+                    <option value="1">상의</option>
+                    <option value="2">하의</option>
+                    <option value="3">잡화</option>
+                </select>
+            </td>
 
-            카테고리 <select name="category">
-            <option value="1">상의</option>
-            <option value="2">하의</option>
-            <option value="3">잡화</option>
-
-        </select>
         </tr>
 
       <tr>
