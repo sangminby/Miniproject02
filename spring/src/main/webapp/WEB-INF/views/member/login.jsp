@@ -86,7 +86,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                         <option value="price">금액</option>
                     </select>
 
-                    <input type="text" name="keyWord" placeholder="Search" />
+                    <input type="text" name="keyWord" placeholder="Search"/>
 
                 </form>
 
