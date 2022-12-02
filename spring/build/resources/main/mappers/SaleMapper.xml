@@ -10,29 +10,32 @@
 
     </insert>
 
+
     <update id="saleModify" parameterType="com.spring.miniproject.domain.Sale">
 
         update sale set pname=#{pname}, price=#{price}, image=#{image} where pnumber=#{pnumber}
 
     </update>
 
+
     <select id="searchOptionByAll" resultType="com.spring.miniproject.domain.Sale">
 
-        select * from sale
+        select s.pnumber, c.category, s.pname, s.price, s.image from sale s, categorys c
         <where>
+
+            s.category = c.idx
 
             <if test="searchType != null and keyWord != null">
 
-                <if test="searchType == 'pname'">
-                    pname like concat('%', #{keyWord}, '%')
+                <if test="searchType == 's.pname'">
+                    s.pname like concat('%', #{keyWord}, '%')
                 </if>
 
-                <if test="searchType == 'price'">
-                    price like concat('%', #{keyWord}, '%')
+                <if test="searchType == 's.price'">
+                    s.price like concat('%', #{keyWord}, '%')
                 </if>
 
             </if>
-
 
         </where>
 
@@ -40,32 +43,21 @@
     
     <select id="categoryOne" resultType="com.spring.miniproject.domain.Sale">
 
-        select c.category, s.pname, s.price, s.image from sale s, categorys c where s.category =c.idx and s.category=1
+        select s.pnumber, c.category, s.pname, s.price, s.image from sale s, categorys c where s.category =c.idx and s.category=1
 
     </select>
 
     <select id="categoryTwo" resultType="com.spring.miniproject.domain.Sale">
 
-        select c.category, s.pname, s.price, s.image from sale s, categorys c where s.category =c.idx and s.category=2
+        select s.pnumber, c.category, s.pname, s.price, s.image from sale s, categorys c where s.category =c.idx and s.category=2
 
     </select>
 
     <select id="categoryThree" resultType="com.spring.miniproject.domain.Sale">
 
-        select c.category, s.pname, s.price, s.image from sale s, categorys c where s.category =c.idx and s.category=3
+        select s.pnumber, c.category, s.pname, s.price, s.image from sale s, categorys c where s.category =c.idx and s.category=3
 
     </select>
-
-
-<!--
-    <select id="saleList" resultType="com.spring.miniproject.domain.Sale">
-
-        select c.category, s.pname, s.price, s.image from sale s, categorys c where s.category =c.idx
-
-&lt;!&ndash;        select
-        case when category=1 then '상의' when category =2 then '하의' else '잡화' end as 'category' from sale&ndash;&gt;
-    </select>
--->
 
 
 </mapper>

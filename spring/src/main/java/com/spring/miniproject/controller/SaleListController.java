@@ -21,15 +21,7 @@ public class SaleListController {
 
     @Autowired
     private InsertOptionService insertOptionService;
-
-    @RequestMapping("/sale/list")
-    public String allList(Model model){
-
-        model.addAttribute("list", saleListService.getSaleList());
-
-        return "/sale/list";
-    }
-/*
+    
 
     @RequestMapping
     public String getList(SearchOption searchOption, Model model) {
@@ -38,7 +30,6 @@ public class SaleListController {
 
         return "/sale/list";
     }
-*/
 
     @RequestMapping("/sale/list1")
     public String getOne(Sale sale, Model model) {
