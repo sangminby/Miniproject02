@@ -1,64 +1,173 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: cheoho-hi
-  Date: 2022-11-30
-  Time: 오후 4:29
-  To change this template use File | Settings | File Templates.
---%>
+<!DOCTYPE HTML>
+<!--
+Editorial by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-  <title>Title</title>
+
+    <title>다있소</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/main.css" />
+
 </head>
-<body>
+<body class="is-preload">
 
-  <h1>상품 수정</h1>
-  <hr>
+<!-- Wrapper -->
+<div id="wrapper">
 
-  <form action="/sale/modify" method="post">
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
 
-    <table>
+            <!-- Header -->
+            <header id="header">
 
-        <tr>
-            <td>카테고리</td>
-            <td>
-                <select name="category">
-                    <option value="1">상의</option>
-                    <option value="2">하의</option>
-                    <option value="3">잡화</option>
-                </select>
-            </td>
+                <a href="/index.jsp" class="logo"><strong>다있소</strong> ShoppingMall</a>
 
-        </tr>
+                <ul>
 
-      <tr>
-        <td>상품번호</td>
-        <td><input type="number" name="pnumber" value="${sale.pnumber}" readonly></td>
-      </tr>
+                    <c:if test="${loginInfo eq null}">
+                        <a href="/login">로그인</a><br>
+                        <a href="/member/register">회원가입</a>
+                    </c:if>
 
-      <tr>
-        <td>상품명</td>
-        <td><input type="text" name="pname" value="${sale.pname}"></td>
-      </tr>
+                    <c:if test="${loginInfo ne null}">
+                        ${loginInfo.uname}님 환영합니다.<br>
+                        <a href="/sale/list">상품 구경하기</a><br>
+                        <a href="/logout"> 로그아웃 </a>
+                    </c:if>
 
-      <tr>
-        <td>판매금액</td>
-        <td><input type="number" name="price" value="${sale.price}"></td>
-      </tr>
+                </ul>
 
-      <tr>
-        <td>상품이미지</td>
-        <td><input type="file" name="image" value="${sale.image}"></td>
-      </tr>
+            </header>
 
-      <tr>
-        <td></td>
-        <td><input type="submit" value="수정"></td>
-      </tr>
+            <form action="/sale/modify" method="post">
 
-    </table>
+                <table>
 
-  </form>
+                    <tr>
+                        <td>카테고리</td>
+                        <td>
+                            <select name="category">
+                                <option value="1">상의</option>
+                                <option value="2">하의</option>
+                                <option value="3">잡화</option>
+                            </select>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>상품번호</td>
+                        <td><input type="number" name="pnumber" value="${sale.pnumber}" readonly></td>
+                    </tr>
+
+                    <tr>
+                        <td>상품명</td>
+                        <td><input type="text" name="pname" value="${sale.pname}"></td>
+                    </tr>
+
+                    <tr>
+                        <td>판매금액</td>
+                        <td><input type="number" name="price" value="${sale.price}"></td>
+                    </tr>
+
+                    <tr>
+                        <td>상품이미지</td>
+                        <td><input type="file" name="image" value="${sale.image}"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="수정"></td>
+                    </tr>
+
+                </table>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+
+        <div class="inner">
+
+            <!-- Search -->
+            <section id="search" class="alt">
+
+                <form>
+
+                    <select name="searchType">
+                        <option value="pname">상품명</option>
+                        <option value="price">금액</option>
+                    </select>
+
+                    <input type="text" name="keyWord" placeholder="Search"/>
+
+                </form>
+
+            </section>
+
+
+            <!-- Menu -->
+            <nav id="menu">
+
+                <header class="major">
+                    <h2>Menu</h2>
+                </header>
+
+                <ul>
+                    <li><a href="/index">HOMEPAGE</a></li>
+                    <li><a href="/sale/list">ALLLIST</a></li>
+                    <li><a href="/sale/list1">TOP</a></li>
+                    <li><a href="/sale/list2">BOTTOM</a></li>
+                    <li><a href="/sale/list3">ACC</a></li>
+                </ul>
+
+            </nav>
+
+
+            <!-- Section -->
+            <section>
+
+                <header class="major">
+                    <h2>INFO</h2>
+                </header>
+                <p>회사명 : 하이미디어 </p>
+                <p>브랜드명 : 다있소</p>
+                <p>주소 : 서울시 강동구 천호동 동원빌딩</p>
+
+
+                <ul class="contact">
+                    <li class="icon solid fa-envelope"><a href="#">himidea@naver.com</a></li>
+                    <li class="icon solid fa-phone">010-1234-5678</li>
+                </ul>
+
+            </section>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/browser.min.js"></script>
+<script src="/js/breakpoints.min.js"></script>
+<script src="/js/util.js"></script>
+<script src="/js/main.js"></script>
 
 </body>
 </html>
