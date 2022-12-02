@@ -84,8 +84,8 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
           <article>
 
-            <span class="icon fa-gem"></span>
-
+            <%--<span class="icon fa-gem" img src="/image/블라우스.jpg"></span>--%>
+            <img src="/image/블라우스.jpg" width=150px height="180px" style="margin-right: 20px">
             <div class="content">
               <h3>트윙클패드블라우스</h3>
               <p>입자마자 얼굴빛이 화사해지는 귀엽고 유니크한 깃털 블라우스♡ 소매의 플라워 단추를 톡- 달아서 사랑스럽게 마무리 해주었어요 *.* 여유로운핏+세미 크롭 기장으로 누구나 부담 없이 캐주얼하게- 특별한 연말룩으로 강추 드려요!</p>
@@ -95,7 +95,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
           <article>
 
-            <span class="icon solid fa-paper-plane"></span>
+            <img src="/image/가디건.jpg" width=150px height="180px" style="margin-right: 20px">
 
             <div class="content">
               <h3>부클트위드가디건</h3>
@@ -106,7 +106,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
           <article>
 
-            <span class="icon solid fa-rocket"></span>
+            <img src="/image/코트.jpg" width=150px height="180px" style="margin-right: 20px">
 
             <div class="content">
               <h3>가든래글런하프코트</h3>
@@ -117,7 +117,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
           <article>
 
-            <span class="icon solid fa-signal"></span>
+            <img src="/image/니트.jpg" width=150px height="180px" style="margin-right: 20px">
 
             <div class="content">
               <h3>세일러오프숄더니트</h3>
