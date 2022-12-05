@@ -60,9 +60,13 @@ SQL
 ```
 ![상품 수정](https://user-images.githubusercontent.com/113090480/205570404-aaeb031b-756a-43d9-96b6-ef390406e3bd.png)
 ```
--삭제
+- 삭제
 ```
 ![상품 삭제](https://user-images.githubusercontent.com/113090480/205570399-460bbb88-3037-4696-8753-53194dd444d0.png)
+```
+- 검색
+```
+![](https://user-images.githubusercontent.com/113090480/205586596-d1e202b7-b669-4368-8803-97f97bba3d64.png)
 
 
 기능
