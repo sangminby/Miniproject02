@@ -54,7 +54,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
       <section>
 
         <header class="major">
-          <h2>ALL LIST</h2>
+          <h2>BOTTOM</h2>
         </header>
 
         <div class="features">
