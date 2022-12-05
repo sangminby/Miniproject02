@@ -18,7 +18,7 @@ SQL
 --------
 ```
 -회원가입
-<img src="https://github.com/sangminby/Miniproject02/blob/main/README/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%ED%8F%BC.png?raw=true"> </img>
+![회원가입폼](https://user-images.githubusercontent.com/113090480/205575486-f500e449-52ee-426a-804a-024ae5c4b2e1.png)
 
 -로그인 폼
 ![로그인폼](https://user-images.githubusercontent.com/113090480/205570391-48dbbab1-ff64-4092-80eb-c4aeeb9fbe84.png)
