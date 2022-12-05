@@ -18,8 +18,8 @@ SQL
 --------
 ```
 -회원가입
-<img src="![image](https://user-images.githubusercontent.com/113090480/205576452-4dad3f8f-a24a-46ba-b1ab-c67d358d228.png)
-"</img>
+![회원가입폼](https://user-images.githubusercontent.com/113090480/205567927-44c2f63a-7363-44d6-8a96-53c4bd83c3d3./img.png)
+
 
 -로그인 폼
 ![로그인폼](https://user-images.githubusercontent.com/113090480/205570391-48dbbab1-ff64-4092-80eb-c4aeeb9fbe84.png)
