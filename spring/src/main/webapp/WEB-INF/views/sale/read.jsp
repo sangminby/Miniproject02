@@ -1,4 +1,6 @@
-    <!DOCTYPE HTML>
+<%@ page import="java.util.Date" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<!DOCTYPE HTML>
     <!--
     Editorial by HTML5 UP
     html5up.net | @ajlkn
@@ -6,6 +8,10 @@
     -->
     <%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+    <%
+        Date nowTime = new Date();
+        SimpleDateFormat sf = new SimpleDateFormat("yyyy년 MM월 dd일 a hh:mm:ss");
+    %>
     <html>
     <head>
 
@@ -75,37 +81,7 @@
             </div>
 
         </div>
-<%--
 
-        <c:if test="${requestScope.replyList != null}">
-            <c:forEach var="reply" items="${requestScope.replyList}">
-                <tr>
-                    <td width="150">
-                    <div>
-                        ${reply.replyer}<br>
-                        <font size="2" color="#d3d3d3">${reply.replyDate}</font>
-                    </div>
-                    </td>
-                    <td width="550">
-                        <div class="textwrapper">
-                            ${reply.reply}
-                        </div>
-                    </td>
-                    <td width="100">
-                        <div id="btn" style="text-align: center">
-                            <a href="#">답글</a><br>
-                            <c:if test="${reply.replyer == sessionScope.sessionUid}">
-                                <a href="#">수정</a><br>
-                                <a href="#">삭제</a>
-                            </c:if>
-                        </div>
-                    </td>
-                </tr>
-            </c:forEach>
-
-        </c:if>
-
---%>
 
         <!-- Sidebar -->
         <div id="sidebar">
