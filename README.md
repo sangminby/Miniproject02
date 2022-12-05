@@ -5,7 +5,8 @@
 SPRING
 -MYBATIS
 -JSON
-DBMS - MySQL
+DBMS 
+- MySQL
 SQL
 ```
 개요
