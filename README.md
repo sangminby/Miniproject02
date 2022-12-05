@@ -18,7 +18,7 @@ SQL
 --------
 ```
 -회원가입
-<img src= "https://user-images.githubusercontent.com/113090480/205578024-f664cdcd-c1b4-48ca-ac50-ea2a60ea58e7.png" width="700" height="370"/>
+<img src= "https://user-images.githubusercontent.com/113090480/205578024-f664cdcd-c1b4-48ca-ac50-ea2a60ea58e7.png" width="300"></img>
 
 -로그인 폼
 ![로그인폼](https://user-images.githubusercontent.com/113090480/205570391-48dbbab1-ff64-4092-80eb-c4aeeb9fbe84.png)
