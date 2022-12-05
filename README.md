@@ -30,7 +30,7 @@ SQL
 -로그인 후 홈페이지
 ![로그인 후 홈페이지](https://user-images.githubusercontent.com/113090480/205570384-aede2d18-03dd-4639-bbee-2157633c43f4.png)
 
-```
+
 판매
 --------
 ```
@@ -51,7 +51,7 @@ SQL
 -삭제
 ![상품 삭제](https://user-images.githubusercontent.com/113090480/205570399-460bbb88-3037-4696-8753-53194dd444d0.png)
 
-```
+
 기능
 --------
 ```
