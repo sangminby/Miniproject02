@@ -33,7 +33,7 @@ public class SaleSaveService {
             try {
                 saveReq.getImage().transferTo(new File(dirRealpath, newImg));
             } catch (IOException e) {
-//                throw new RuntimeException(e);
+
             }
 
         }
