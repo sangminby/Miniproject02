@@ -25,7 +25,7 @@ SQL
 ![로그인폼](https://user-images.githubusercontent.com/113090480/205570391-48dbbab1-ff64-4092-80eb-c4aeeb9fbe84.png)
 
 -로그인 전 홈페이지
-![로그인 전 홈페이지](https://user-images.githubusercontent.com/113090480/205570372-28290dd3-6793-45ad-8b56-90733b31c428.png)
+<img src="https://user-images.githubusercontent.com/113090480/205570372-28290dd3-6793-45ad-8b56-90733b31c428.png"> </img>
 
 -로그인 후 홈페이지
 ![로그인 후 홈페이지](https://user-images.githubusercontent.com/113090480/205570384-aede2d18-03dd-4639-bbee-2157633c43f4.png)
