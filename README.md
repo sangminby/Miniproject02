@@ -18,7 +18,7 @@ SQL
 --------
 ```
 -회원가입
-![회원가입폼](https://user-images.githubusercontent.com/113090480/205567927-44c2f63a-7363-44d6-8a96-53c4bd83c3d3./img.png)
+![회원가입폼](https://user-images.githubusercontent.com/113090480/205578024-f664cdcd-c1b4-48ca-ac50-ea2a60ea58e7.png)
 
 
 -로그인 폼
